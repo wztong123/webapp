@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  div#index
+    img(src="#{img}", alt="",)
+    script.
+      window.onload = function () {
+        document.getElementById('index').onclick = function () {
+          window.location.href = '/list';
+        };
+      }; 
+  
